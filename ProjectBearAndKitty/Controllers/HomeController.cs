@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectBearAndKitty.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace ProjectBearAndKitty.Controllers
 {
     public class HomeController : Controller
     {
+        BearAndKittyHelper bearAndKittyHelper = new BearAndKittyHelper();
         public ActionResult Index()
         {
             return View();
@@ -15,15 +17,20 @@ namespace ProjectBearAndKitty.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+          
+            var shoppingList = bearAndKittyHelper.GetAllDataForShopping();
+             
+            foreach (var item in shoppingList)
+            {
+                ViewBag.Message += item.NameOfProduct + "<br/>";
+            }
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
+            bearAndKittyHelper.AddItemToShoppingList("jammy jam jam");
+            ViewBag.Message = "Your added jammy jam jam.";
             return View();
         }
     }
