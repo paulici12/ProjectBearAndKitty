@@ -12,7 +12,9 @@ namespace ProjectBearAndKitty.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
+                        NameOfProduct = c.String(),
+                        Amount = c.Int(nullable: false),
+                        Description = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             

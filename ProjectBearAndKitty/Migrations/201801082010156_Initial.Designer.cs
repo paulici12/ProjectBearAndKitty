@@ -13,7 +13,7 @@ namespace ProjectBearAndKitty.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201801081939356_Initial"; }
+            get { return "201801082010156_Initial"; }
         }
         
         string IMigrationMetadata.Source
