@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectBearAndKitty", "ProjectBearAndKitty\ProjectBearAndKitty.csproj", "{E7F4C119-4C73-41F8-92AD-A5B30A8B4509}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectBearAndKitty", "ProjectBearAndKitty\ProjectBearAndKitty.csproj", "{838046DF-67DB-4D21-8086-E7352AF6A34E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E7F4C119-4C73-41F8-92AD-A5B30A8B4509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7F4C119-4C73-41F8-92AD-A5B30A8B4509}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7F4C119-4C73-41F8-92AD-A5B30A8B4509}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7F4C119-4C73-41F8-92AD-A5B30A8B4509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{838046DF-67DB-4D21-8086-E7352AF6A34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{838046DF-67DB-4D21-8086-E7352AF6A34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{838046DF-67DB-4D21-8086-E7352AF6A34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{838046DF-67DB-4D21-8086-E7352AF6A34E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {42A073ED-A582-43D5-9480-46503751B70D}
+		SolutionGuid = {67422BF2-180C-4948-B08B-42669FA7B697}
 	EndGlobalSection
 EndGlobal
