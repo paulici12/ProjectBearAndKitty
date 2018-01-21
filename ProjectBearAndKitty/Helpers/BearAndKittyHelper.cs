@@ -32,7 +32,17 @@ namespace ProjectBearAndKitty.Helpers
                 };
                 db.ShoppingLists.Add(shoppingList);
                 db.SaveChanges();
-
+            }
+        }
+        public void DeleteItemFromShoppingList(int id)
+        {
+            using (var db = new BearAndKitty())
+            {
+                var shoppingListToRemove = (from s in db.ShoppingLists
+                                     where s.Id == id
+                                     select s).SingleOrDefault();
+                db.ShoppingLists.Remove(shoppingListToRemove);
+                db.SaveChanges();
             }
         }
     }

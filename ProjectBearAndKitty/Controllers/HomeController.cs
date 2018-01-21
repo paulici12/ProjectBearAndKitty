@@ -10,28 +10,27 @@ namespace ProjectBearAndKitty.Controllers
     public class HomeController : Controller
     {
         BearAndKittyHelper bearAndKittyHelper = new BearAndKittyHelper();
+
+
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-          
             var shoppingList = bearAndKittyHelper.GetAllDataForShopping();
-             
-            foreach (var item in shoppingList)
-            {
-                ViewBag.Message += item.NameOfProduct + "<br/>";
-            }
-            return View();
+            return View(shoppingList);
         }
 
-        public ActionResult Contact()
+        [HttpPost]
+        public ActionResult AddItem(string name, int amount, string description)
         {
-            bearAndKittyHelper.AddItemToShoppingList("jammy jam jam");
-            ViewBag.Message = "Your added jammy jam jam.";
-            return View();
+            bearAndKittyHelper.AddItemToShoppingList(name, amount, description);
+
+            return RedirectToAction("Index");
+        }
+
+     
+        public ActionResult DeleteItem(int id)
+        {
+            bearAndKittyHelper.DeleteItemFromShoppingList(id);
+            return RedirectToAction("Index");
         }
     }
 }
