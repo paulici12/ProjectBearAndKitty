@@ -1,8 +1,4 @@
 ﻿using ProjectBearAndKitty.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace ProjectBearAndKitty.Controllers
@@ -10,7 +6,6 @@ namespace ProjectBearAndKitty.Controllers
     public class HomeController : Controller
     {
         BearAndKittyHelper bearAndKittyHelper = new BearAndKittyHelper();
-
 
         public ActionResult Index()
         {

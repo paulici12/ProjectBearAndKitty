@@ -15,8 +15,7 @@ namespace ProjectBearAndKitty.Helpers
         {
             using(var db =new BearAndKitty())
             {
-                var shoppingLists = (from s in db.ShoppingLists
-                             select s).ToList();
+                var shoppingLists = (from s in db.ShoppingLists select s).ToList();
                 return shoppingLists;
             }
         }
